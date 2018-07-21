@@ -1,0 +1,33 @@
+{
+  "name": "storybook",
+  "version": "0.1.0",
+  "private": false,
+  "main": "app.js",
+  "scripts": {
+    "storybook-dev": "start-storybook -p 3000",
+    "storybook-build": "build-storybook -c .storybook -o .out",
+    "storybook": "http-server ./.out -p 4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ajduke/storybook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ajduke/storybook/issues"
+  },
+  "homepage": "https://github.com/ajduke/storybook",
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-info": "3.4.8",
+    "@storybook/addons": "3.4.8",
+    "@storybook/react": "3.4.8",
+    "babel-core": "6.26.3",
+    "storybook-addon-jsx": "5.3.0"
+  },
+  "dependencies": {
+    "http-server": "0.11.1",
+    "react": "16.4.1",
+    "react-dom": "16.4.1"
+  }
+}
